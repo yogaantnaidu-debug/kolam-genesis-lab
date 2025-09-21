@@ -5,10 +5,11 @@ import Chatbot from "@/components/Chatbot";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Background Pattern */}
+      {/* Traditional Kolam Background Patterns */}
       <div className="absolute inset-0 kolam-bg"></div>
       <div className="absolute inset-0 kolam-pattern"></div>
       <div className="absolute inset-0 kolam-motifs"></div>
+      <div className="absolute inset-0 kolam-details"></div>
       
       {/* Header */}
       <header className="relative z-10 w-full p-6">
