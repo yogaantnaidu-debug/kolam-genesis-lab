@@ -1,5 +1,6 @@
 import AuthButtons from "@/components/auth/AuthButtons";
 import { GenerateKolamCard, AnalyzeKolamCard } from "@/components/KolamFeature";
+import Chatbot from "@/components/Chatbot";
 
 const Index = () => {
   return (
@@ -7,6 +8,7 @@ const Index = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 kolam-bg"></div>
       <div className="absolute inset-0 kolam-pattern"></div>
+      <div className="absolute inset-0 kolam-motifs"></div>
       
       {/* Header */}
       <header className="relative z-10 w-full p-6">
@@ -46,6 +48,9 @@ const Index = () => {
           </p>
         </div>
       </main>
+
+      {/* Chatbot */}
+      <Chatbot />
     </div>
   );
 };

@@ -124,16 +124,36 @@ All colors MUST be HSL.
     radial-gradient(circle at 25% 25%, hsl(var(--kolam-pattern)) 2px, transparent 2px),
     radial-gradient(circle at 75% 75%, hsl(var(--kolam-pattern)) 2px, transparent 2px),
     radial-gradient(circle at 25% 75%, hsl(var(--kolam-pattern)) 1px, transparent 1px),
-    radial-gradient(circle at 75% 25%, hsl(var(--kolam-pattern)) 1px, transparent 1px);
-  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
-  background-position: 0 0, 25px 25px, 0 25px, 25px 0;
-  opacity: 0.1;
+    radial-gradient(circle at 75% 25%, hsl(var(--kolam-pattern)) 1px, transparent 1px),
+    /* Traditional kolam dots */
+    radial-gradient(circle at 12.5% 12.5%, hsl(var(--kolam-pattern)) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 37.5% 37.5%, hsl(var(--kolam-pattern)) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 62.5% 62.5%, hsl(var(--kolam-pattern)) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 87.5% 87.5%, hsl(var(--kolam-pattern)) 1.5px, transparent 1.5px);
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px, 40px 40px, 40px 40px, 40px 40px, 40px 40px;
+  background-position: 0 0, 25px 25px, 0 25px, 25px 0, 5px 5px, 15px 15px, 35px 35px, 45px 45px;
+  opacity: 0.08;
 }
 
 .kolam-pattern {
   background-image: 
     linear-gradient(45deg, transparent 25%, hsl(var(--kolam-pattern)) 25%, hsl(var(--kolam-pattern)) 50%, transparent 50%),
-    linear-gradient(-45deg, transparent 25%, hsl(var(--kolam-pattern)) 25%, hsl(var(--kolam-pattern)) 50%, transparent 50%);
-  background-size: 20px 20px;
-  opacity: 0.05;
+    linear-gradient(-45deg, transparent 25%, hsl(var(--kolam-pattern)) 25%, hsl(var(--kolam-pattern)) 50%, transparent 50%),
+    /* Traditional connecting lines */
+    linear-gradient(0deg, transparent 48%, hsl(var(--kolam-pattern)) 48%, hsl(var(--kolam-pattern)) 52%, transparent 52%),
+    linear-gradient(90deg, transparent 48%, hsl(var(--kolam-pattern)) 48%, hsl(var(--kolam-pattern)) 52%, transparent 52%);
+  background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
+  opacity: 0.03;
+}
+
+/* Enhanced traditional kolam motifs */
+.kolam-motifs {
+  background-image:
+    /* Star patterns */
+    conic-gradient(from 0deg at 50% 50%, transparent 0deg, hsl(var(--kolam-pattern)) 30deg, transparent 60deg, hsl(var(--kolam-pattern)) 90deg, transparent 120deg, hsl(var(--kolam-pattern)) 150deg, transparent 180deg, hsl(var(--kolam-pattern)) 210deg, transparent 240deg, hsl(var(--kolam-pattern)) 270deg, transparent 300deg, hsl(var(--kolam-pattern)) 330deg, transparent 360deg),
+    /* Flower patterns */
+    radial-gradient(circle at 50% 50%, transparent 8px, hsl(var(--kolam-pattern)) 9px, hsl(var(--kolam-pattern)) 10px, transparent 11px);
+  background-size: 80px 80px, 60px 60px;
+  background-position: 40px 40px, 0 0;
+  opacity: 0.02;
 }
